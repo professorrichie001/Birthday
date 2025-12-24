@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #fce7f3 0%, #fecaca 25%, #fde047 50%, #fedcba 75%, #fce7f3 100%);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.gallery-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+}
+
+.wish-card {
+  border: none;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #fff7ed 0%, #fce7f3 100%) !important;
+}
+
+.wish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.wish-hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.wish-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(236, 72, 153, 0.3) !important;
+}
+
+.btn-birthday {
+  background: linear-gradient(135deg, #ec4899 0%, #f97316 100%) !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+  color: white !important;
+}
+
+.btn-birthday:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(236, 72, 153, 0.4) !important;
+  color: white !important;
+}
+
+.countdown-item {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  min-width: 80px;
+}
+
+.countdown-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #dc2626;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 0.875rem;
+  color: #991b1b;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #be123c;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #ec4899, #f97316);
+  border-radius: 2px;
+}
+
+.alert {
+  border-radius: 12px;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #f3e8e8;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 0.2rem rgba(236, 72, 153, 0.25);
+}
+
+#messagesList::-webkit-scrollbar {
+  width: 8px;
+}
+
+#messagesList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#messagesList::-webkit-scrollbar-thumb {
+  background: #ec4899;
+  border-radius: 10px;
+}
+
+#messagesList::-webkit-scrollbar-thumb:hover {
+  background: #be123c;
+}
+
